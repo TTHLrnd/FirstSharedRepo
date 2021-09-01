@@ -20,15 +20,15 @@ public class Main {
         return min;
     }
 
-    public static int sumOfEvens(int[] array) {
-        int sum = 0;
+    public static int counterOfEvens(int[] array) {
+        int counter = 0;
 
         for (int i = 0; i < array.length; i++) {
             if(array[i] % 2 == 0 ) {
-                sum+= array[i];
+                counter++;
             }
         }
-        return sum;
+        return counter;
     }
     public static int piecesOfUnpara (int[] array) {
         int counter = 0;
@@ -51,12 +51,21 @@ public class Main {
         return max;
     }
 
-    public static int sumOfUnpara (int[] array){
-        int sum = 0;
+    public static int counterOfUnpara (int[] array){
+        int counter = 0;
         for( int i = 0; i<array.length; i++){
             if(array[i] % 2 != 0) {
-                sum+= array[i];
+                counter++;
             }
+        }
+        return counter;
+    }
+
+    public static int sumOfOdds(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (!(array[i] % 2 == 0))
+            sum+= array[i];
         }
         return sum;
     }
