@@ -79,5 +79,9 @@ public class Main {
         return sum;
     }
 
+    public static void asd() {
+        System.out.println("Hello!");
+    }
+
 
 }
