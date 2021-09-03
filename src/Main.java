@@ -83,5 +83,9 @@ public class Main {
         System.out.println("Hello!");
     }
 
+    public static void asd2() {
+        System.out.println("Hello!");
+    }
+
 
 }
